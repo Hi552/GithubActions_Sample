@@ -29,5 +29,6 @@ def transform(data, model):
     for target_col in ["Grade 2014", "Species"]:
         if target_col in data:
             data.pop(target_col)
+    data = data
     data = data.fillna(0)
     return data
